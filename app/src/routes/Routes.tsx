@@ -1,6 +1,6 @@
     import { RouteObject } from "react-router-dom";
 import NotFound from "../components/NotFound";
-import Login from "../components/Login";
+import Login from "@/pages/Login";
 
     const routes:RouteObject[] = [
         { path: '/', element:<Login/>  },

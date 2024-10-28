@@ -1,0 +1,10 @@
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-bg-img {
+  background: url(https://img.freepik.com/free-photo/modern-empty-business-corporate-office-meeting-room-is-ready-businesspeople-late-night_482257-2168.jpg?t=st=1730120687~exp=1730124287~hmac=d0a3e9e228c6e4ec1ced0fdff31c348446807c6622291866710590f01a9fe889&w=360);
+  background-size: contain;
+  background-position: center;
+}   
+

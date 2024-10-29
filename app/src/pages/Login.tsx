@@ -1,7 +1,7 @@
+import Loader from "@/components/Loader";
 import LoginComponent from "@/components/LoginComponent";
 import SignUpComponent from "@/components/SignUpComponent";
 import { useState } from "react";
-
 
 const Login = () => {
   const [login, setLogin] = useState<boolean>(true);
@@ -11,6 +11,7 @@ const Login = () => {
     <div
       className={` h-screen flex flex-row transition duration-300 ease-in-out`}
     >
+      {/* <Loader/> */}
       {
         login ? 
         <LoginComponent login={login} setLogin={setLogin}/>
@@ -23,8 +24,8 @@ const Login = () => {
           login ? "-translate-x-full" : "translate-x-0"
         } transition duration-300 flex flex-col justify-center items-start  gap-5`}
       >
-        <div className="relative h-full flex flex-col justify-center items-start px-16 gap-5">
-          <div className="absolute inset-0 bg-gray-600 opacity-85 rounded-lg z-0"></div>
+        <div className="relative h-full w-full flex flex-col justify-center items-start px-16 gap-5">
+          <div className="absolute inset-0 bg-gray-600 opacity-85 w-full z-0"></div>
 
           <p className="text-white text-6xl font-semibold z-10">
             {login ?"Welcome back!":"Looks like you're new here!"}

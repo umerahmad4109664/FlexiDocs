@@ -1,0 +1,16 @@
+{
+    "Controller Func": {
+      "prefix": "cont",
+      "body": [
+        "exports.$1 = async (req, res) => {",
+        "  try {",
+        "    ",
+        "  } catch (error) {",
+        "    return res.status(200).send({ message: \"Failed\" });",
+        "  }",
+        "};"
+      ],
+      "description": "Creates a controller function with try-catch"
+    }
+  }
+  

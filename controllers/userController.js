@@ -30,7 +30,7 @@ exports.createAccount = async (req, res) => {
 exports.signIn = async (req, res) => {
   const { email, password } = req.body
   try {
-
+    console.log(email)
     const user = await User.findOne({ email })
     if (!user) return res.status(404).send({ message: "Invalid Credentials" })
 
